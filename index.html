@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Question Time ❤️</title>
+</head>
+<body>
+  <!-- <header>
+    <div class="heart">❤️</div>
+    <h1>Will You Be My Valentine?</h1>
+
+    <p class="message">
+      From the moment you walked into my life, everything became brighter,
+      warmer, and more beautiful.  
+      I want to keep making memories, laughing together,
+      and loving you more every single day.
+    </p>
+
+    <div class="buttons">
+      <button onclick="sayYes()">YES 💖</button>
+      <button onclick="sayYes()">OF COURSE 😘</button>
+    </div>
+  </header>
+
+  <section class="gallery">
+    <h2>Our Memories 📸</h2>
+
+    <div class="images"> -->
+      <!-- Replace with your real photos -->
+      <!-- <img src="https://picsum.photos/300/300?1" />
+      <img src="https://picsum.photos/300/300?2" />
+      <img src="https://picsum.photos/300/300?3" />
+      <img src="https://picsum.photos/300/300?4" />
+      <img src="https://picsum.photos/300/300?5" />
+      <img src="https://picsum.photos/300/300?6" />
+    </div>
+  </section>
+
+  <footer>
+    Made with endless love ❤️
+  </footer>
+
+  <script>
+    function sayYes() {
+      alert("Yay!!! Best decision ever ❤️ I love you!");
+    }
+  </script> -->
+
+  <div class="box" id="passwordScreen">
+    <h1>Private Entry 🔐</h1>
+    <p>Only my baby can enter ❤️</p>
+
+    <input type="password" id="passwordInput" placeholder="Enter secret password">
+    <button id="enterBtn">Enter 💕</button>
+  </div>
+
+  <div class="box hidden" id="letterScreen">
+    <h1>For You ❤️</h1>
+    <p id="loveLetter"></p>
+    <button id="startBtn">Continue 😘</button>
+  </div>
+
+  <div class="box hidden" id="step1">
+    <h1>Who are you? 😘</h1>
+
+    <button onclick="goStep2()">Mutki Shona Bubu 💕</button>
+    <button onclick="goStep2()">Momo Chan 🥰</button>
+    <button onclick="retry()">Shefali 🥲</button>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="box hidden" id="step2">
+    <h1>Are you angry at me? 😢</h1>
+
+    <button id="yesBtn" onclick="turnNo()">Yes ❤️</button>
+    <button onclick="goStep3()">No 🙈</button>
+  </div>
+
+  <!-- STEP 3 -->
+  <div class="box hidden" id="step3">
+    <h1>I LOVE YOU 💖</h1>
+    <p>
+      You are my happiness, my safe place, my favorite person.
+      Life is beautiful because you are in it.
+    </p>
+
+    <h2>Will you be my Valentine? 🌹</h2>
+
+    <button onclick="goSuccess()">Yes 💘</button>
+    <button onclick="goSuccess()">Of Course 😍</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
